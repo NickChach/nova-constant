@@ -107,16 +107,7 @@ export default function SoftwareDevPage() {
 					image={image}
 				/>
 				<Features features={features} />
-				<Projects
-					projects={projects}
-					projectsTitle={styles.h2}
-					projectsStyle={styles.projects}
-					projectTitle={styles.h3}
-					projectDescription={styles.p}
-					cardsStyles={styles.cards}
-					projectLinks={styles.a}
-					projectStyles={styles.project}
-				/>
+				<Projects projects={projects} />
 			</main>
 			<Footer />
 		</div>

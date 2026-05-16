@@ -29,16 +29,3 @@
 		color: var(--white);
 	}
 }
-
-/* 
-@media screen and (max-width: 490) {
-  #project {
-    clip-path: polygon(0% 2.5rem, 
-    2.5rem 0, 
-    100% 0, 
-    100% calc(100% - 2.5rem), 
-    calc(100% - 2.5rem) 100%, 
-    0 100%);
-  }
-}
- */

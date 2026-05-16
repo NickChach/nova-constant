@@ -33,6 +33,18 @@ export default function sitemap() {
 			priority: 0.9,
 		},
 		{
+			url: `${baseUrl}/blog`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/en-etei-2026-wordpress-den-arkei`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.7,
+		},
+		{
 			url: `${baseUrl}/privacy-policy`,
 			lastModified: new Date(),
 			changeFrequency: "weekly",

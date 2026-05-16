@@ -33,6 +33,11 @@ export default function Navbar() {
 					</Link>
 				</li>
 				<li className={`${styles.standardMenu} ${isOpen ? styles.openMenu : ""}`}>
+					<Link href="/blog" id={currentPage.startsWith("/blog") ? styles.highlighted : ""}>
+						Blog,
+					</Link>
+				</li>
+				<li className={`${styles.standardMenu} ${isOpen ? styles.openMenu : ""}`}>
 					<Link href="/about" id={currentPage === "/about" ? styles.highlighted : ""}>
 						About,
 					</Link>
