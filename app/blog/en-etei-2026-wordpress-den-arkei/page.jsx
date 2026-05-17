@@ -4,6 +4,29 @@ import Header from "@/components/header/Header";
 import MainHero from "@/components/main-hero/MainHero";
 import imageNextjsWordpress from "../../../public/images/nextjs_vs_wordpress.webp";
 
+export const metadata = {
+	title: "NovaConstant — NickChachlioutis | Εν έτει 2026, το WordPress δεν αρκεί",
+	openGraph: {
+		title: "NovaConstant — NickChachlioutis | Εν έτει 2026, το WordPress δεν αρκεί",
+		description:
+			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
+		url: "https://www.nickchachlioutis.gr/blog/en-etei-2026-wordpress-den-arkei",
+		siteName: "NovaConstant — NickChachlioutis",
+		images: [
+			{
+				url: "/images/nickchachlioutis.png",
+				width: 1200,
+				height: 630,
+			},
+		],
+		locale: "el_GR",
+		type: "website",
+	},
+	alternates: {
+		canonical: "https://www.nickchachlioutis.gr/blog/en-etei-2026-wordpress-den-arkei",
+	},
+};
+
 export default function WordpressArticle() {
 	const image = {
 		src: imageNextjsWordpress,
