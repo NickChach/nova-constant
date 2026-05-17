@@ -4,7 +4,9 @@ import Footer from "@/components/footer/Footer";
 import MainHero from "@/components/main-hero/MainHero";
 import Features from "@/components/features/Features";
 import imageWebDev from "../../public/images/business_growth.webp";
+import imageNeaAlexandras from "../../public/images/ta_nea_tis_alexandras.webp";
 import { LuRocket, LuMonitorSmartphone, LuTrendingUp, LuPalette, LuMail, LuHandshake } from "react-icons/lu";
+import Projects from "@/components/projects/Projects";
 
 export const metadata = {
 	title: "NovaConstant — NickChachlioutis | Ανάπτυξη Ιστοσελίδων",
@@ -28,6 +30,16 @@ export const metadata = {
 		canonical: "https://www.nickchachlioutis.gr/web-dev",
 	},
 };
+
+const projects = [
+	{
+		title: "Τα Νέα της Αλεξάνδρας",
+		description: "Ιστοσελίδα για μουσικό μεζεδοπωλείο.",
+		website: "https://www.taneatisalexandras.gr",
+		imgSrc: imageNeaAlexandras,
+		imgAlt: "Εικόνα του ιστότοπου «Τα Νέα της Αλεξάνδρας».",
+	},
+];
 
 export default function WebDevPage() {
 	const image = {
@@ -85,6 +97,7 @@ export default function WebDevPage() {
 					image={image}
 				/>
 				<Features features={features} />
+				<Projects projects={projects} />
 			</main>
 			<Footer />
 		</div>
