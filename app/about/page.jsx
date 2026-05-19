@@ -32,8 +32,8 @@ export default function AboutPage() {
 	const image = {
 		src: imageAbout,
 		alt: "Φωτογραφία του Νίκου Χαχλιούτη.",
-		width: "1280",
-		height: "940",
+		width: "900",
+		height: "661",
 	};
 
 	return (

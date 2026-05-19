@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header";
 import styles from "./blog.module.css";
 import MainHero from "@/components/main-hero/MainHero";
-import imageBlog from "../../public/images/thoughts1.webp";
+import imageBlog from "../../public/images/thoughts.webp";
 import Footer from "@/components/footer/Footer";
 import Articles from "@/components/articles/Articles";
 

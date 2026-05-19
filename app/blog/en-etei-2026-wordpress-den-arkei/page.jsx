@@ -31,8 +31,8 @@ export default function WordpressArticle() {
 	const image = {
 		src: imageNextjsWordpress,
 		alt: "Το Next.js κερδίζει το Wordpress σε αγώνα πυγμαχίας.",
-		width: "900",
-		height: "600",
+		width: "901",
+		height: "661",
 	};
 
 	return (

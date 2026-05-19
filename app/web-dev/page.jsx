@@ -45,8 +45,8 @@ export default function WebDevPage() {
 	const image = {
 		src: imageWebDev,
 		alt: "Man with revenue chart going up.",
-		width: "1278",
-		height: "924",
+		width: "900",
+		height: "651",
 	};
 
 	const features = [

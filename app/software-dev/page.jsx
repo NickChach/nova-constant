@@ -36,8 +36,8 @@ export default function SoftwareDevPage() {
 	const image = {
 		src: imageSoftDev,
 		alt: "Image of application windows.",
-		width: "1280",
-		height: "994",
+		width: "900",
+		height: "699",
 	};
 
 	const features = [
