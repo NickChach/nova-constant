@@ -1,0 +1,60 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.container em {
+	color: var(--dark-green);
+}
+
+.articlePage {
+	padding: 2.5rem 2.5rem;
+	width: 75vw;
+}
+
+.articlePage p,
+.articlePage h3,
+.articlePage li {
+	font-size: clamp(1.25rem, calc(0.275rem + 1.5vw), 1.75rem);
+	letter-spacing: 0.025rem;
+}
+
+.articlePage p,
+.articlePage ul {
+	margin-bottom: 1rem;
+}
+
+.articlePage h2 {
+	font-size: clamp(1.24rem, calc(0.725rem + 1.6vw), 2.25rem);
+	font-weight: 700;
+	color: var(--dark-green);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.articlePage h3 {
+	color: var(--dark-green);
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+}
+
+.articlePage ul {
+	padding-left: clamp(2.5rem, calc(0.725rem + 4vw), 5rem);
+}
+
+.articlePage li {
+	list-style: disc;
+}
+
+@media screen and (max-width: 960) {
+	.articlePage {
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 414) {
+	.articlePage {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

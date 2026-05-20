@@ -12,7 +12,7 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<section>
-				<Image src={logo} alt="Nova Constant's logo" width="237" height="240" preload placeholder="blur" />
+				<Image src={logo} alt="Nova Constant's logo" width="237" height="240" preload={true} placeholder="blur" />
 				<p className={chakraPetch.className}>
 					<span className={styles.green}>NOVA</span> <span className={styles.red}>CONSTANT</span>
 				</p>

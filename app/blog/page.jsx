@@ -41,6 +41,10 @@ export default function BlogPage() {
 			title: "Εν έτει 2026, το WordPress δεν αρκεί",
 			link: "/blog/en-etei-2026-wordpress-den-arkei",
 		},
+		{
+			title: "Social media χωρίς επιχειρηματική ιστοσελίδα;",
+			link: "/blog/social-media-horis-epiheirimatiki-istoselida",
+		},
 	];
 
 	return (

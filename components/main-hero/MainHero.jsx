@@ -12,7 +12,7 @@ export default function MainHero({ tag, title, subtitle, image }) {
 					<p>{subtitle}</p>
 				</hgroup>
 			</section>
-			<Image src={image.src} alt={image.alt} width={image.width} height={image.height} preload placeholder="blur" />
+			<Image src={image.src} alt={image.alt} width={image.width} height={image.height} preload={true} placeholder="blur" />
 		</article>
 	);
 }

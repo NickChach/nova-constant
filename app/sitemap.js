@@ -45,6 +45,12 @@ export default function sitemap() {
 			priority: 0.7,
 		},
 		{
+			url: `${baseUrl}/blog/social-media-horis-epiheirimatiki-istoselida`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.7,
+		},
+		{
 			url: `${baseUrl}/privacy-policy`,
 			lastModified: new Date(),
 			changeFrequency: "weekly",
