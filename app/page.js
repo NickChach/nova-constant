@@ -1,6 +1,7 @@
 import MainTitle from "@/components/main-title/MainTitle";
 import styles from "./page.module.css";
 import EnterMenu from "@/components/enter-menu/EnterMenu";
+import structuredData from "../structured-data/general.json";
 
 export const metadata = {
 	title: "NovaConstant — NickChachlioutis",
@@ -28,6 +29,7 @@ export const metadata = {
 export default function Home() {
 	return (
 		<main className={styles.hero}>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 			<MainTitle />
 			<EnterMenu />
 		</main>
