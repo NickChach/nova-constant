@@ -1,6 +1,7 @@
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import structuredData from "../structured-data/general.json";
 
 const IbmPlexSans = IBM_Plex_Sans({
 	weight: ["300", "400", "700"],
@@ -60,6 +61,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="el" className={IbmPlexSans.className}>
+			<head>
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+			</head>
 			<body>
 				{children}
 				<Analytics />

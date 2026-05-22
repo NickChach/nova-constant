@@ -1,0 +1,96 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": "https://www.nickchachlioutis.gr/#website",
+			"url": "https://www.nickchachlioutis.gr/",
+			"name": "NovaConstant — NickChachlioutis",
+			"alternateName": "Nova Constant Digital",
+			"description": "Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
+			"publisher": {
+				"@id": "https://www.nickchachlioutis.gr/#organization"
+			},
+			"inLanguage": "el-GR"
+		},
+		{
+			"@type": "ProfessionalService",
+			"@id": "https://www.nickchachlioutis.gr/#organization",
+			"name": "Nova Constant Digital",
+			"legalName": "Χαχλιούτης Νικόλαος",
+			"url": "https://www.nickchachlioutis.gr/",
+			"email": "contact@nickchachlioutis.gr",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Αθήνα",
+				"addressRegion": "Αττική",
+				"addressCountry": "GR"
+			},
+			"knowsAbout": [
+				"Web Development",
+				"Software Development",
+				"JavaScript",
+				"React",
+				"Next.js",
+				"Go",
+				"Python",
+				"Linux",
+				"Git",
+				"SEO & Conversion",
+				"SOLID Principles",
+				"Clean Code"
+			],
+			"founder": {
+				"@id": "https://www.nickchachlioutis.gr/#person"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Υπηρεσίες Nova Constant Digital",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Ανάπτυξη Ιστοσελίδων (Web Development)",
+							"description": "Επαγγελματικές ιστοσελίδες υψηλών επιδόσεων, βελτιστοποιημένες για ταχύτητα, ασφάλεια και SEO, με custom design και πλήρη προσαρμοστικότητα σε όλες τις οθόνες.",
+							"url": "https://www.nickchachlioutis.gr/web-dev"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Ανάπτυξη Λογισμικού (Software Development)",
+							"description": "Full-stack development υπηρεσίες για εταιρείες λογισμικού και dev teams με έμφαση στην ταχύτητα, την επεκτασιμότητα, την ασφάλεια και τον καθαρό κώδικα (SOLID).",
+							"url": "https://www.nickchachlioutis.gr/software-dev"
+						}
+					}
+				]
+			}
+		},
+		{
+			"@type": "Person",
+			"@id": "https://www.nickchachlioutis.gr/#person",
+			"name": "Νίκος Χαχλιούτης",
+			"jobTitle": "Full-stack Web Developer",
+			"worksFor": {
+				"@id": "https://www.nickchachlioutis.gr/#organization"
+			},
+			"url": "https://www.nickchachlioutis.gr/about",
+			"sameAs": ["https://github.com/NickChach"]
+		},
+		{
+			"@type": "WebPage",
+			"@id": "https://www.nickchachlioutis.gr/#homepage",
+			"url": "https://www.nickchachlioutis.gr/",
+			"name": "NovaConstant — NickChachlioutis | Αρχική",
+			"isPartOf": {
+				"@id": "https://www.nickchachlioutis.gr/#website"
+			},
+			"about": {
+				"@id": "https://www.nickchachlioutis.gr/#organization"
+			},
+			"inLanguage": "el-GR"
+		}
+	]
+}
