@@ -78,7 +78,12 @@
 				"@id": "https://www.nickchachlioutis.gr/#organization"
 			},
 			"url": "https://www.nickchachlioutis.gr/about",
-			"sameAs": ["https://github.com/NickChach"]
+			"sameAs": [
+				"https://github.com/NickChach",
+				"https://www.linkedin.com/in/nickchach",
+				"https://www.facebook.com/NovaConstantDigital",
+				"https://www.instagram.com/novaconstantdigital"
+			]
 		},
 		{
 			"@type": "WebPage",
