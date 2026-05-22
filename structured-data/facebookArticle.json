@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/social-media-horis-epiheirimatiki-istoselida"
+	},
+	"headline": "Social media χωρίς επιχειρηματική ιστοσελίδα;",
+	"description": "Γιατί μια σελίδα στα social media λειτουργεί απλώς ως διαφημιστική πινακίδα, ενώ η αυτόνομη επιχειρηματική επαγγελματική ιστοσελίδα αποτελεί το σταθερό ψηφιακό σπίτι μιας επιχείρησης, βελτιστοποιημένο για μηχανές αναζήτησης και AI (τεχνητή νοημοσύνη).",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}

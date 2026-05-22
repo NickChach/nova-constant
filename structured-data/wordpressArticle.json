@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/en-etei-2026-wordpress-den-arkei"
+	},
+	"headline": "Εν έτει 2026, το WordPress δεν αρκεί",
+	"description": "Ανάλυση των προκλήσεων που αντιμετωπίζει το WordPress με πρόσθετα και themes, και γιατί η custom ανάπτυξη ιστοσελίδων με Next.js προσφέρει καλύτερη ταχύτητα, SEO και επεκτασιμότητα.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}

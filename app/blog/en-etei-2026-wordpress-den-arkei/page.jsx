@@ -3,6 +3,7 @@ import styles from "./article-page.module.css";
 import Header from "@/components/header/Header";
 import MainHero from "@/components/main-hero/MainHero";
 import imageNextjsWordpress from "../../../public/images/nextjs_vs_wordpress.webp";
+import structuredData from "@/structured-data/wordpressArticle.json";
 
 export const metadata = {
 	title: "NovaConstant — NickChachlioutis | Εν έτει 2026, το WordPress δεν αρκεί",
@@ -37,6 +38,7 @@ export default function WordpressArticle() {
 
 	return (
 		<div className={styles.container}>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 			<Header />
 			<main>
 				<MainHero

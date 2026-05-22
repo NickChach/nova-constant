@@ -3,6 +3,7 @@ import styles from "./article-page.module.css";
 import MainHero from "@/components/main-hero/MainHero";
 import imageSocialMediaWebsite from "@/public/images/social_media_website_pipeline.webp";
 import Footer from "@/components/footer/Footer";
+import structuredData from "@/structured-data/facebookArticle.json";
 
 export const metadata = {
 	title: "NovaConstant — NickChachlioutis | Social media χωρίς επιχειρηματική ιστοσελίδα;",
@@ -37,6 +38,7 @@ export default function SocialMediaArticle() {
 
 	return (
 		<div className={styles.container}>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 			<Header />
 			<main>
 				<MainHero
