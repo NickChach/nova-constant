@@ -43,7 +43,7 @@ export default function SoftwareDevPage() {
 	const features = [
 		{
 			title: "Σύγχρονο Stack",
-			subtitle: "JavaScript, React, Next.js, Go, Python κ.α.",
+			subtitle: "TypeScript, React, Next.js, Go, Python κ.α.",
 			icon: <LuCodeXml className={styles.icon} />,
 		},
 		{
