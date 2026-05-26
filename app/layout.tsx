@@ -1,6 +1,7 @@
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 
 const IbmPlexSans = IBM_Plex_Sans({
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body>
 				{children}
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
