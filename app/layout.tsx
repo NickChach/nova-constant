@@ -1,13 +1,14 @@
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
 
 const IbmPlexSans = IBM_Plex_Sans({
 	weight: ["300", "400", "700"],
 	subsets: ["latin", "greek"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
 	description:
 		"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 	authors: [{ name: "NovaConstant — NickChachlioutis" }],
@@ -30,7 +31,7 @@ export const metadata = {
 		"custom web solutions",
 		"web design",
 		"seo",
-		"search engine optimasition",
+		"search engine optimisation",
 		"αθήνα",
 		"athens",
 		"αττική",
@@ -57,7 +58,7 @@ export const metadata = {
 	},
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="el" className={IbmPlexSans.className}>
 			<body>
