@@ -1,9 +1,10 @@
+import type { NextRequest } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
 	try {
 		const { name, email, message } = await request.json();
 

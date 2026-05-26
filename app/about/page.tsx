@@ -4,8 +4,10 @@ import Footer from "@/components/footer/Footer";
 import MainHero from "@/components/main-hero/MainHero";
 import imageAbout from "../../public/images/profile.webp";
 import Description from "@/components/description/Description";
+import type { Metadata } from "next";
+import type { ImageObject } from "@/types";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | About",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | About",
@@ -28,14 +30,14 @@ export const metadata = {
 	},
 };
 
-export default function AboutPage() {
-	const image = {
-		src: imageAbout,
-		alt: "Φωτογραφία του Νίκου Χαχλιούτη.",
-		width: "900",
-		height: "661",
-	};
+const image: ImageObject = {
+	src: imageAbout,
+	alt: "Φωτογραφία του Νίκου Χαχλιούτη.",
+	width: "900",
+	height: "661",
+};
 
+export default function AboutPage() {
 	return (
 		<div className={styles.container}>
 			<Header />

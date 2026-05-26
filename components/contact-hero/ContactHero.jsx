@@ -4,7 +4,7 @@ import Tag from "../tag/Tag";
 import Contacts from "../contacts/Contacts";
 import ContactForm from "../contact-form/ContactForm";
 
-export default function ContactHero({ tag, title, subtitle, contacts, image }) {
+export default function ContactHero({ tag, title, subtitle, contacts }) {
 	return (
 		<article className={styles.hero}>
 			<section>
