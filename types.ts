@@ -22,3 +22,8 @@ export type FeatureObject = {
 	subtitle: string;
 	icon: ReactNode;
 };
+
+export type ArticleObject = {
+	title: string;
+	link: string;
+};

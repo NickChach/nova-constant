@@ -4,8 +4,10 @@ import MainHero from "@/components/main-hero/MainHero";
 import imageBlog from "../../public/images/thoughts.webp";
 import Footer from "@/components/footer/Footer";
 import Articles from "@/components/articles/Articles";
+import type { Metadata } from "next";
+import type { ArticleObject, ImageObject } from "@/types";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Blog",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | Blog",
@@ -28,25 +30,25 @@ export const metadata = {
 	},
 };
 
+const image: ImageObject = {
+	src: imageBlog,
+	alt: "Σκέψεις γύρω από τη φωτιά κάτω από τον έναστρο ουρανό.",
+	width: "880",
+	height: "660",
+};
+
+const articles: ArticleObject[] = [
+	{
+		title: "Εν έτει 2026, το WordPress δεν αρκεί",
+		link: "/blog/en-etei-2026-wordpress-den-arkei",
+	},
+	{
+		title: "Social media χωρίς επιχειρηματική ιστοσελίδα;",
+		link: "/blog/social-media-horis-epiheirimatiki-istoselida",
+	},
+];
+
 export default function BlogPage() {
-	const image = {
-		src: imageBlog,
-		alt: "Σκέψεις γύρω από τη φωτιά κάτω από τον έναστρο ουρανό.",
-		width: "880",
-		height: "660",
-	};
-
-	const articles = [
-		{
-			title: "Εν έτει 2026, το WordPress δεν αρκεί",
-			link: "/blog/en-etei-2026-wordpress-den-arkei",
-		},
-		{
-			title: "Social media χωρίς επιχειρηματική ιστοσελίδα;",
-			link: "/blog/social-media-horis-epiheirimatiki-istoselida",
-		},
-	];
-
 	return (
 		<div className={styles.container}>
 			<Header />
@@ -71,7 +73,7 @@ export default function BlogPage() {
 									<span className={`${styles.star} ${styles.d3}`}></span>
 									<span className={`${styles.star} ${styles.four} ${styles.d4}`}></span>
 									<span className={`${styles.star} ${styles.d5}`}></span>
-									<span></span>
+									<span className={`${styles.star} ${styles.four} ${styles.d6}`}></span>
 									<span className={`${styles.star} ${styles.four} ${styles.d7}`}></span>
 									<span className={`${styles.star} ${styles.d8}`}></span>
 									<span className={`${styles.star} ${styles.four} ${styles.d9}`}></span>

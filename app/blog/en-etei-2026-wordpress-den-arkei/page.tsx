@@ -4,8 +4,10 @@ import Header from "@/components/header/Header";
 import MainHero from "@/components/main-hero/MainHero";
 import imageNextjsWordpress from "../../../public/images/nextjs_vs_wordpress.webp";
 import structuredData from "@/structured-data/wordpressArticle.json";
+import type { Metadata } from "next";
+import type { ImageObject } from "@/types";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Εν έτει 2026, το WordPress δεν αρκεί",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | Εν έτει 2026, το WordPress δεν αρκεί",
@@ -28,14 +30,14 @@ export const metadata = {
 	},
 };
 
-export default function WordpressArticle() {
-	const image = {
-		src: imageNextjsWordpress,
-		alt: "Το Next.js κερδίζει το Wordpress σε αγώνα πυγμαχίας.",
-		width: "901",
-		height: "661",
-	};
+const image: ImageObject = {
+	src: imageNextjsWordpress,
+	alt: "Το Next.js κερδίζει το Wordpress σε αγώνα πυγμαχίας.",
+	width: "901",
+	height: "661",
+};
 
+export default function WordpressArticle() {
 	return (
 		<div className={styles.container}>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

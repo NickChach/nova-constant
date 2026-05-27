@@ -4,8 +4,10 @@ import MainHero from "@/components/main-hero/MainHero";
 import imageSocialMediaWebsite from "@/public/images/social_media_website_pipeline.webp";
 import Footer from "@/components/footer/Footer";
 import structuredData from "@/structured-data/facebookArticle.json";
+import type { Metadata } from "next";
+import type { ImageObject } from "@/types";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Social media χωρίς επιχειρηματική ιστοσελίδα;",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | Social media χωρίς επιχειρηματική ιστοσελίδα;",
@@ -28,14 +30,14 @@ export const metadata = {
 	},
 };
 
-export default function SocialMediaArticle() {
-	const image = {
-		src: imageSocialMediaWebsite,
-		alt: "Η συνεργία μεταξύ social media κι επιχειρηματικής ιστοσελίδας",
-		width: "900",
-		height: "600",
-	};
+const image: ImageObject = {
+	src: imageSocialMediaWebsite,
+	alt: "Η συνεργία μεταξύ social media κι επιχειρηματικής ιστοσελίδας",
+	width: "900",
+	height: "600",
+};
 
+export default function SocialMediaArticle() {
 	return (
 		<div className={styles.container}>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
