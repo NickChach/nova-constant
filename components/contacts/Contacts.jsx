@@ -5,7 +5,7 @@ export default function Contacts({ contacts }) {
 	return (
 		<ul className={styles.contacts}>
 			{contacts.map((contact) => {
-				return <Contact key={contact.href} type={contact.type} href={contact.href} icon={contact.icon} />;
+				return <Contact key={contact.href} text={contact.text} href={contact.href} icon={contact.icon} />;
 			})}
 		</ul>
 	);

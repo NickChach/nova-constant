@@ -3,8 +3,10 @@ import Header from "@/components/header/Header";
 import styles from "./contact.module.css";
 import ContactHero from "@/components/contact-hero/ContactHero";
 import { FaRegEnvelope, FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa6";
+import type { Metadata } from "next";
+import type { ContactObject } from "@/types";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Επικοινωνία",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | Επικοινωνία",
@@ -27,30 +29,30 @@ export const metadata = {
 	},
 };
 
-export default function ContactPage() {
-	const contacts = [
-		{
-			type: "contact@nickchachlioutis.gr",
-			href: "mailto:contact@nickchachlioutis.gr",
-			icon: <FaRegEnvelope className={styles.icon} />,
-		},
-		{
-			type: "NovaConstantDigital",
-			href: "https://m.me/NovaConstantDigital",
-			icon: <FaFacebookMessenger className={styles.icon} />,
-		},
-		{
-			type: "694 503 7327",
-			href: "viber://chat?number=%2B+306945037327",
-			icon: <FaViber className={styles.icon} />,
-		},
-		{
-			type: "694 503 7327",
-			href: "https://wa.me/+306945037327",
-			icon: <FaWhatsapp className={styles.icon} />,
-		},
-	];
+const contacts: ContactObject[] = [
+	{
+		text: "contact@nickchachlioutis.gr",
+		href: "mailto:contact@nickchachlioutis.gr",
+		icon: <FaRegEnvelope className={styles.icon} />,
+	},
+	{
+		text: "NovaConstantDigital",
+		href: "https://m.me/NovaConstantDigital",
+		icon: <FaFacebookMessenger className={styles.icon} />,
+	},
+	{
+		text: "694 503 7327",
+		href: "viber://chat?number=%2B+306945037327",
+		icon: <FaViber className={styles.icon} />,
+	},
+	{
+		text: "694 503 7327",
+		href: "https://wa.me/+306945037327",
+		icon: <FaWhatsapp className={styles.icon} />,
+	},
+];
 
+export default function ContactPage() {
 	return (
 		<div className={styles.container}>
 			<Header />

@@ -27,3 +27,9 @@ export type ArticleObject = {
 	title: string;
 	link: string;
 };
+
+export type ContactObject = {
+	text: string;
+	href: string;
+	icon: ReactNode;
+};
