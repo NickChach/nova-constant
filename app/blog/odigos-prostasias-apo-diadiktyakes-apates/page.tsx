@@ -32,9 +32,9 @@ export const metadata: Metadata = {
 
 const image: ImageObject = {
 	src: imageWebFraud,
-	alt: "Το Next.js κερδίζει το Wordpress σε αγώνα πυγμαχίας.",
+	alt: "Απατεώνας προσπαθεί να πουλήσει ψεύτικο προϊόν.",
 	width: "901",
-	height: "661",
+	height: "604",
 };
 
 export default function ApatesArticle() {
