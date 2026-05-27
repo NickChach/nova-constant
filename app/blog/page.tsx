@@ -46,6 +46,10 @@ const articles: ArticleObject[] = [
 		title: "Social media χωρίς επιχειρηματική ιστοσελίδα;",
 		link: "/blog/social-media-horis-epiheirimatiki-istoselida",
 	},
+	{
+		title: "Οδηγός προστασίας από διαδικτυακές απάτες",
+		link: "/blog/odigos-prostasias-apo-diadiktyakes-apates",
+	},
 ];
 
 export default function BlogPage() {

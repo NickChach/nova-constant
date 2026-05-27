@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/odigos-prostasias-apo-diadiktyakes-apates"
+	},
+	"headline": "Οδηγός προστασίας από διαδικτυακές απάτες.",
+	"description": "Οι καλύτερες μέθοδοι προστασίας από διαδικτυακές απάτες είναι να αποφεύγουμε προσφορές που μοιάζουν εξωπραγματικά καλές για να είναι αληθινές, να προσέχουμε τις μεθόδους πληρωμής που χρησιμοποιούμε όταν κάνουμε αγορές και να αρχειοθετούμε ιστοσελίδες από πιθανές απάτες στη Wayback Machine του Internet Archive.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}

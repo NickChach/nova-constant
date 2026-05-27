@@ -51,6 +51,12 @@ export default function sitemap() {
 			priority: 0.7,
 		},
 		{
+			url: `${baseUrl}/blog/odigos-prostasias-apo-diadiktyakes-apates`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.7,
+		},
+		{
 			url: `${baseUrl}/privacy-policy`,
 			lastModified: new Date(),
 			changeFrequency: "weekly",
