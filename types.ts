@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import type { StaticImageData } from "next/image";
 import type { ReactNode } from "react";
 
@@ -32,4 +33,20 @@ export type ContactObject = {
 	text: string;
 	href: string;
 	icon: ReactNode;
+};
+
+export type BlogPostObject = {
+	slug: string;
+	tag: string;
+	title: ReactNode;
+	plainTitle: string;
+	subtitle: string;
+	image: ImageObject;
+	content: ReactNode;
+	metadata: Metadata;
+	structuredData: Record<string, unknown>;
+};
+
+export type Props = {
+	params: Promise<{ slug: string }>;
 };

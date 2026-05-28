@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import Articles from "@/components/articles/Articles";
 import type { Metadata } from "next";
 import type { ArticleObject, ImageObject } from "@/types";
+import blogPosts from "@/blogPosts";
 
 export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Blog",
@@ -37,20 +38,12 @@ const image: ImageObject = {
 	height: "660",
 };
 
-const articles: ArticleObject[] = [
-	{
-		title: "Εν έτει 2026, το WordPress δεν αρκεί",
-		link: "/blog/en-etei-2026-wordpress-den-arkei",
-	},
-	{
-		title: "Social media χωρίς επιχειρηματική ιστοσελίδα;",
-		link: "/blog/social-media-horis-epiheirimatiki-istoselida",
-	},
-	{
-		title: "Οδηγός προστασίας από διαδικτυακές απάτες",
-		link: "/blog/odigos-prostasias-apo-diadiktyakes-apates",
-	},
-];
+const articles: ArticleObject[] = blogPosts.map((blogPost) => {
+	return {
+		title: blogPost.plainTitle,
+		link: `/blog/${blogPost.slug}`,
+	};
+});
 
 export default function BlogPage() {
 	return (

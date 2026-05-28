@@ -1,5 +1,16 @@
+import blogPosts from "@/blogPosts";
+
 export default function sitemap() {
 	const baseUrl = "https://www.nickchachlioutis.gr";
+
+	const blogUrls = blogPosts.map((blogPost) => {
+		return {
+			url: `${baseUrl}/blog/${blogPost.slug}`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.7,
+		};
+	});
 
 	return [
 		{
@@ -38,29 +49,6 @@ export default function sitemap() {
 			changeFrequency: "weekly",
 			priority: 0.7,
 		},
-		{
-			url: `${baseUrl}/blog/en-etei-2026-wordpress-den-arkei`,
-			lastModified: new Date(),
-			changeFrequency: "weekly",
-			priority: 0.7,
-		},
-		{
-			url: `${baseUrl}/blog/social-media-horis-epiheirimatiki-istoselida`,
-			lastModified: new Date(),
-			changeFrequency: "weekly",
-			priority: 0.7,
-		},
-		{
-			url: `${baseUrl}/blog/odigos-prostasias-apo-diadiktyakes-apates`,
-			lastModified: new Date(),
-			changeFrequency: "weekly",
-			priority: 0.7,
-		},
-		{
-			url: `${baseUrl}/privacy-policy`,
-			lastModified: new Date(),
-			changeFrequency: "weekly",
-			priority: 0.5,
-		},
+		...blogUrls,
 	];
 }
