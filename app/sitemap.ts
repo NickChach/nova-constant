@@ -1,9 +1,10 @@
 import blogPosts from "@/blogPosts";
+import type { BlogUrlObject } from "@/types";
 
 export default function sitemap() {
-	const baseUrl = "https://www.nickchachlioutis.gr";
+	const baseUrl: string = "https://www.nickchachlioutis.gr";
 
-	const blogUrls = blogPosts.map((blogPost) => {
+	const blogUrls: BlogUrlObject[] = blogPosts.map((blogPost) => {
 		return {
 			url: `${baseUrl}/blog/${blogPost.slug}`,
 			lastModified: new Date(),

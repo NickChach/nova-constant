@@ -1,8 +1,9 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import styles from "./privacy-policy.module.css";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "NovaConstant — NickChachlioutis | Πολιτική Απορρήτου",
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis | Πολιτική Απορρήτου",

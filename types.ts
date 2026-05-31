@@ -50,3 +50,10 @@ export type BlogPostObject = {
 export type Props = {
 	params: Promise<{ slug: string }>;
 };
+
+export type BlogUrlObject = {
+	url: string;
+	lastModified: Date;
+	changeFrequency: string;
+	priority: number;
+};
