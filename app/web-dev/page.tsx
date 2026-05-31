@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 const image: ImageObject = {
 	src: imageWebDev,
 	alt: "Man with revenue chart going up.",
-	width: "900",
-	height: "651",
+	width: 900,
+	height: 651,
 };
 
 const features: FeatureObject[] = [

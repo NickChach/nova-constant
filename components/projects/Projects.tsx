@@ -1,7 +1,8 @@
+import type { ProjectObject } from "@/types";
 import Project from "../project/Project";
 import styles from "./projects.module.css";
 
-export default function Projects({ projects }) {
+export default function Projects({ projects }: { projects: ProjectObject[] }) {
 	return (
 		<article className={styles.projects}>
 			<h2>Έργα</h2>

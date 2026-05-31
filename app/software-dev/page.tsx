@@ -37,8 +37,8 @@ export const metadata: Metadata = {
 const image: ImageObject = {
 	src: imageSoftDev,
 	alt: "Image of application windows.",
-	width: "900",
-	height: "699",
+	width: 900,
+	height: 699,
 };
 
 const features: FeatureObject[] = [

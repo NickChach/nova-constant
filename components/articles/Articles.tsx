@@ -1,7 +1,8 @@
+import type { ArticleObject } from "@/types";
 import Article from "../article/article";
 import styles from "./articles.module.css";
 
-export default function Articles({ articles }) {
+export default function Articles({ articles }: { articles: ArticleObject[] }) {
 	return (
 		<article className={styles.articles}>
 			<h2>Άρθρα</h2>

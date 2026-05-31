@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
-	const currentPage = usePathname();
+	const currentPage: string = usePathname();
 	const [isOpen, setIsOpen] = useState(false);
 
 	function toggleHamburger() {

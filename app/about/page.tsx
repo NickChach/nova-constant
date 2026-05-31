@@ -33,8 +33,8 @@ export const metadata: Metadata = {
 const image: ImageObject = {
 	src: imageAbout,
 	alt: "Φωτογραφία του Νίκου Χαχλιούτη.",
-	width: "900",
-	height: "661",
+	width: 900,
+	height: 661,
 };
 
 export default function AboutPage() {

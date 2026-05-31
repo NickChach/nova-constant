@@ -1,8 +1,10 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import styles from "./main-hero.module.css";
 import Tag from "../tag/Tag";
+import type { ImageObject } from "@/types";
+import type { ReactNode } from "react";
 
-export default function MainHero({ tag, title, subtitle, image }) {
+export default function MainHero({ tag, title, subtitle, image }: { tag: string; title: ReactNode; subtitle: string; image: ImageObject }) {
 	return (
 		<article className={styles.hero}>
 			<section>

@@ -1,17 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type SubmitEvent } from "react";
 import styles from "./contact-form.module.css";
 import Link from "next/link";
 
 export default function ContactForm() {
 	const [status, setStatus] = useState("idle");
 
-	async function handleSubmit(e) {
+	async function handleSubmit(e: SubmitEvent & { currentTarget: HTMLFormElement }) {
 		e.preventDefault();
 		setStatus("loading");
 
-		const formData = new FormData(e.target);
+		const form = e.currentTarget;
+		const formData = new FormData(form);
 
 		try {
 			const respond = await fetch("/api/contact", {
@@ -26,8 +27,9 @@ export default function ContactForm() {
 
 			if (!respond.ok) throw new Error();
 			setStatus("success");
-			e.target.reset();
+			form.reset();
 		} catch {
+			console.log("the problem is here");
 			setStatus("error");
 		}
 	}
@@ -41,7 +43,7 @@ export default function ContactForm() {
 			<form onSubmit={handleSubmit}>
 				<section>
 					<label htmlFor="name">Όνομα</label>
-					<input type="text" name="name" id="name" minLength="3" placeholder="Το όνομά σας" required></input>
+					<input type="text" name="name" id="name" minLength={3} placeholder="Το όνομά σας" required></input>
 				</section>
 				<section>
 					<label htmlFor="email">E-mail</label>
@@ -49,7 +51,7 @@ export default function ContactForm() {
 				</section>
 				<section>
 					<label htmlFor="message">Μήνυμα</label>
-					<textarea name="message" id="message" rows="8" placeholder="Μιλήστε μου για το εγχείρημά σας..." required></textarea>
+					<textarea name="message" id="message" rows={8} placeholder="Μιλήστε μου για το εγχείρημά σας..." required></textarea>
 				</section>
 				<button type="submit" disabled={status === "loading"}>
 					{status === "loading" ? "Αποστολή..." : "Αποστολή"}

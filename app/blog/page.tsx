@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 const image: ImageObject = {
 	src: imageBlog,
 	alt: "Σκέψεις γύρω από τη φωτιά κάτω από τον έναστρο ουρανό.",
-	width: "880",
-	height: "660",
+	width: 880,
+	height: 660,
 };
 
 const articles: ArticleObject[] = blogPosts.map((blogPost) => {

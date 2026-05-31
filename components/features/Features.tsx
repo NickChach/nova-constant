@@ -1,7 +1,8 @@
+import type { FeatureObject } from "@/types";
 import Feature from "../feature/Feature";
 import styles from "./features.module.css";
 
-export default function Features({ features }) {
+export default function Features({ features }: { features: FeatureObject[] }) {
 	return (
 		<article className={styles.features}>
 			{features.map((feature) => {

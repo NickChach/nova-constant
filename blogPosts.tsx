@@ -10,20 +10,20 @@ const images: ImageObject[] = [
 	{
 		src: imageNextjsWordpress,
 		alt: "Το Next.js κερδίζει το Wordpress σε αγώνα πυγμαχίας.",
-		width: "901",
-		height: "661",
+		width: 901,
+		height: 661,
 	},
 	{
 		src: imageSocialMediaWebsite,
 		alt: "Η συνεργία μεταξύ social media κι επιχειρηματικής ιστοσελίδας",
-		width: "900",
-		height: "600",
+		width: 900,
+		height: 600,
 	},
 	{
 		src: imageWebFraud,
 		alt: "Απατεώνας προσπαθεί να πουλήσει ψεύτικο προϊόν.",
-		width: "901",
-		height: "604",
+		width: 901,
+		height: 604,
 	},
 ];
 

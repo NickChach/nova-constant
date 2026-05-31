@@ -1,8 +1,9 @@
 import { LuArrowBigRight } from "react-icons/lu";
 import styles from "./description.module.css";
 import BulletPoint from "../bullet-point/BulletPoint";
+import type { BulletPointObject } from "@/types";
 
-const BULLET_POINTS = [
+const BULLET_POINTS: BulletPointObject[] = [
 	{
 		title: "πρώτη εντύπωση",
 		content:

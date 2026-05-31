@@ -14,8 +14,8 @@ export type ProjectObject = {
 export type ImageObject = {
 	src: StaticImageData;
 	alt: string;
-	width: string;
-	height: string;
+	width: number;
+	height: number;
 };
 
 export type FeatureObject = {
@@ -56,4 +56,9 @@ export type BlogUrlObject = {
 	lastModified: Date;
 	changeFrequency: string;
 	priority: number;
+};
+
+export type BulletPointObject = {
+	title: string;
+	content: string;
 };
