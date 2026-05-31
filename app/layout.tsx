@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="el" className={IbmPlexSans.className}>
+		<html lang="el" data-scroll-behavior="smooth" className={IbmPlexSans.className}>
 			<body>
 				{children}
 				<Analytics />
