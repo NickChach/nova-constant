@@ -62,3 +62,9 @@ export type BulletPointObject = {
 	title: string;
 	content: string;
 };
+
+export type FormContentObject = {
+	name: string;
+	email: string;
+	message: string;
+};
