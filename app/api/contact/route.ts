@@ -7,8 +7,10 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function validateForm(name: string, email: string, message: string): Response | undefined {
 	if (!name || !email || !message) {
+		console.log("the problem is not the regex");
 		return Response.json({ error: "All fields are required" }, { status: 400 });
 	} else if (!emailRegex.test(email)) {
+		console.log("the problem is the regex");
 		return Response.json({ error: "Invalid e-mail address" }, { status: 400 });
 	}
 }
@@ -17,7 +19,11 @@ export async function POST(request: NextRequest): Promise<Response> {
 	try {
 		const { name, email, message }: FormContentObject = await request.json();
 
-		validateForm(name, email, message);
+		const validationError = validateForm(name, email, message);
+
+		if (validationError) {
+			return validationError;
+		}
 
 		await resend.emails.send({
 			from: "Contact Form <contact@nickchachlioutis.gr>",
@@ -35,6 +41,7 @@ export async function POST(request: NextRequest): Promise<Response> {
 
 		return Response.json({ success: true });
 	} catch (error) {
+		console.log("the problem is in the catch block");
 		return Response.json({ error: "Failed to send e-mail" }, { status: 500 });
 	}
 }
