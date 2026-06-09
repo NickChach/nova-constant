@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/proti-entyposi-einai-psifiaki"
+	},
+	"headline": "Η πρώτη εντύπωση είναι πλέον ψηφιακή",
+	"description": "Η πρώτη επαφή ενός υποψήφιου πελάτη με μια επιχείρηση γίνεται στο διαδίκτυο. Μια σύγχρονη ιστοσελίδα ιστοσελίδα αντικατοπτρίζει την αξιοπιστία της επιχείρησης.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}
