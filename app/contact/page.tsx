@@ -42,12 +42,12 @@ const contacts: ContactObject[] = [
 	},
 	{
 		text: "694 503 7327",
-		href: "viber://chat?number=%2B+306945037327",
+		href: "viber://chat?number=+306945037327",
 		icon: <FaViber className={styles.icon} />,
 	},
 	{
 		text: "694 503 7327",
-		href: "https://wa.me/+306945037327",
+		href: "https://wa.me/306945037327",
 		icon: <FaWhatsapp className={styles.icon} />,
 	},
 ];
