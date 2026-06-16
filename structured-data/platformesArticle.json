@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/megala-afentika-mikres-othones"
+	},
+	"headline": "Μεγάλα αφεντικά, μικρές οθόνες",
+	"description": "H αδράνεια των μικρομεσαίων επιχειρήσεων απέναντι στο e-commerce γέννησε την παντοκρατορία των marketplaces. Η μόνη λύση είναι η επένδυση στο κύρος της επιχείρησής σου.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}
