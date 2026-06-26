@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/en-etei-2026-wordpress-den-arkei"
+	},
+	"headline": "Εν έτει 2026, το WordPress δεν αρκεί",
+	"description": "Ανάλυση των προβλημάτων κυβερνοασφάλειας με το WordPress και πώς το Next.js μας προστατεύει από επιθέσεις χάκερ.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}
