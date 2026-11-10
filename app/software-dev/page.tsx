@@ -7,7 +7,7 @@ import imageSoftDev from "../../public/images/app_windows.webp";
 import { LuCodeXml, LuBox, LuUsers, LuZap, LuSquareTerminal, LuGitBranch } from "react-icons/lu";
 import Projects from "@/components/projects/Projects";
 import imageNPMVulnScanner from "../../public/images/npm_vulnerability_scanner.webp";
-import imageSemanticPdfSearch from "../../public/images/semantic_pdf_search.webp";
+import imagePassagePin from "../../public/images/passagepin.webp";
 import type { Metadata } from "next";
 import type { FeatureObject, ImageObject, ProjectObject } from "@/types";
 
@@ -76,20 +76,20 @@ const features: FeatureObject[] = [
 
 const projects: ProjectObject[] = [
 	{
+		title: "PassagePin",
+		description: "Desktop app για semantic search αρχείων PDF με χρήση embedding μοντέλου τεχνητής νοημοσύνης.",
+		code: "https://github.com/NickChach/passagepin",
+		website: "https://www.passagepin.com/",
+		imgSrc: imagePassagePin,
+		imgAlt: "Εικόνα του PassagePin desktop app.",
+	},
+	{
 		title: "NPM Vulnerability Scanner",
 		description: "Διαδικτυακή εφαρμογή που σαρώνει αρχεία package-lock.json για γνωστά vulnerabilities.",
 		code: "https://github.com/NickChach/NPM-Vulnerability-Scanner",
 		website: "https://npm-vulnerability-scanner.vercel.app",
 		imgSrc: imageNPMVulnScanner,
 		imgAlt: "Εικόνα του ιστότοπου NPM Vulnerability Scanner.",
-	},
-	{
-		title: "Semantic PDF Search",
-		description: "CLI tool για semantic search αρχείων PDF με χρήση embedding μοντέλων τεχνητής νοημοσύνης.",
-		code: "https://github.com/NickChach/semantic-pdf-search",
-		website: null,
-		imgSrc: imageSemanticPdfSearch,
-		imgAlt: "Image of Semantic PDF Search CLI tool.",
 	},
 ];
 
