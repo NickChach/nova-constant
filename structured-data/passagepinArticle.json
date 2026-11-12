@@ -1,0 +1,21 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.nickchachlioutis.gr/blog/architektoniki-passagepin"
+	},
+	"headline": "Η αρχιτεκτονική του PassagePin",
+	"description": "Ανάλυση της αρχιτεκτονικής του λογισμικού PassagePin για την αναζήτηση σε αρχεία PDF βάσει νοήματος.",
+	"inLanguage": "el-GR",
+	"publisher": {
+		"@type": "ProfessionalService",
+		"name": "Nova Constant Digital",
+		"url": "https://www.nickchachlioutis.gr/"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "Νίκος Χαχλιούτης",
+		"url": "https://www.nickchachlioutis.gr/about"
+	}
+}
