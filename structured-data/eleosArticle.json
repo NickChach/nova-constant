@@ -3,10 +3,10 @@
 	"@type": "BlogPosting",
 	"mainEntityOfPage": {
 		"@type": "WebPage",
-		"@id": "https://www.nickchachlioutis.gr/blog/en-etei-2026-wordpress-den-arkei"
+		"@id": "https://www.nickchachlioutis.gr/blog/eleos-wordpressakides"
 	},
-	"headline": "Εν έτει 2026, το WordPress δεν αρκεί",
-	"description": "Ανάλυση των προβλημάτων κυβερνοασφάλειας με το WordPress και πώς το Next.js μας προστατεύει από επιθέσεις χάκερ.",
+	"headline": "Έλεος με τους WordPressάκηδες!",
+	"description": "Η επιμονή υποτιθέμενων «επαγγελματιών» σε λάθος τεχνολογίες είναι δώρο για τους χάκερς.",
 	"inLanguage": "el-GR",
 	"publisher": {
 		"@type": "ProfessionalService",
