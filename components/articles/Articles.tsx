@@ -7,7 +7,7 @@ export default function Articles({ articles }: { articles: ArticleObject[] }) {
 		<article className={styles.articles}>
 			<h2>Άρθρα</h2>
 			<ul>
-				{articles.map((article) => {
+				{articles.toReversed().map((article) => {
 					return <Article key={article.title} title={article.title} link={article.link} />;
 				})}
 			</ul>
