@@ -8,6 +8,7 @@ import { LuCodeXml, LuBox, LuUsers, LuZap, LuSquareTerminal, LuGitBranch } from 
 import Projects from "@/components/projects/Projects";
 import imageNPMVulnScanner from "../../public/images/npm_vulnerability_scanner.webp";
 import imagePassagePin from "../../public/images/passagepin.webp";
+import imageSiteglass from "../../public/images/siteglass.webp";
 import type { Metadata } from "next";
 import type { FeatureObject, ImageObject, ProjectObject } from "@/types";
 
@@ -82,6 +83,14 @@ const projects: ProjectObject[] = [
 		website: "https://www.passagepin.com/",
 		imgSrc: imagePassagePin,
 		imgAlt: "Εικόνα του PassagePin desktop app.",
+	},
+	{
+		title: "Siteglass",
+		description: "Διαδικτυακή εφαρμογή που ελέγχει WordPress ιστότοπους για σημάδια χακαρίσματος SEO poisoning.",
+		code: "https://github.com/NickChach/siteglass",
+		website: "https://siteglass-psi.vercel.app/",
+		imgSrc: imageSiteglass,
+		imgAlt: "Εικόνα του ιστότοπου Siteglass",
 	},
 	{
 		title: "NPM Vulnerability Scanner",
